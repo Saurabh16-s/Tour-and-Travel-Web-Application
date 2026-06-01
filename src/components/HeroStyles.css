@@ -1,1 +1,105 @@
-/* Style your components */
+/* ===========================
+   HERO CONTAINER
+   =========================== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-mid {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.hero-mid h1 {
+  padding-top: 4rem !important;
+}
+
+/* ===========================
+   HERO BACKGROUND IMAGE
+   Put image BEHIND the text
+   =========================== */
+.hero img,
+.hero-mid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1; /* ⭐ Goes behind text */
+}
+
+/* ===========================
+   HERO TEXT
+   =========================== */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  color: #fff;
+  z-index: 10; /* ⭐ Above image */
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.5rem 0 2rem 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* ===========================
+   BUTTON STYLES
+   =========================== */
+.hero-text .show {
+  text-decoration: none;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 2px;
+
+  position: relative;
+  z-index: 20; /* ⭐ clickable */
+  cursor: pointer; /* ⭐ pointer cursor */
+}
+
+.hero-text .hide {
+  display: none;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+@media screen and (max-width: 555px) {
+  .hero-text h1 {
+    padding: 10px 20px;
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .hero-text .show {
+    padding: 0.6rem 1.1rem;
+    font-size: 1rem;
+  }
+}

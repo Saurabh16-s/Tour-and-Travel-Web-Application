@@ -1,1 +1,119 @@
-/* Style your components */
+/* ====== Navbar Container ====== */
+/* ===== Navbar Container ===== */
+.NavbarItems {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 80px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  position: fixed;
+  top: 20px;
+  z-index: 9999;
+  border-radius: 13px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+
+/* ===== Logo ===== */
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ===== MENU (FIXED) ===== */
+.nav-menu {
+  display: flex;              /* 🔥 FIX */
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+}
+
+/* ===== Links ===== */
+.nav-links {
+  color: #222;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links:hover {
+  background-color: #f26a2e;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ===== Buttons ===== */
+.nav-menu button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+/* Login */
+.login-btn {
+  background: transparent;
+  border: 1px solid #222;
+}
+
+.login-btn:hover {
+  background: #f26a2e;
+  color: #fff;
+}
+
+/* Signup */
+.signup-btn {
+  background: #222;
+  color: #fff;
+}
+
+.signup-btn:hover {
+  background: #f26a2e;
+}
+
+/* Logout */
+.logout-btn {
+  background: #222;
+  color: #fff;
+}
+
+/* ===== Mobile ===== */
+.menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .menu-icons {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu button {
+    width: 80%;
+    margin: 10px auto;
+  }
+}

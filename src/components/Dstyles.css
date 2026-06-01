@@ -1,0 +1,138 @@
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  z-index: 999999;
+}
+
+
+.popup-content {
+  background: #fff;
+  width: 100%;
+  max-width: 380px;
+
+  padding: 20px;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 90vh;              
+  position: relative;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.popup-content input,
+.popup-content select,
+.popup-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Close Button */
+.close-btn {
+  width: 100%;
+  background: red;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+
+
+@media (max-width: 360px) {
+  .popup-content {
+    padding: 12px;
+    max-width: 95%;
+    max-height: 88vh;
+  }
+
+  .popup-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .submit-btn,
+  .close-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    padding: 15px;
+    max-height: 85vh;
+  }
+
+  .popup-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .popup {
+    padding: 15px;
+  }
+
+  .popup-content {
+    max-width: 450px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .popup-content {
+    max-width: 420px;
+  }
+}

@@ -2,7 +2,7 @@ import "./ContactFormStyles.css";
 
 function ContactForm() {
   return (
-    <div className="from-container">
+    <div className="formm-container">
       <h1>Your Code Here</h1>
     </div>
   );
