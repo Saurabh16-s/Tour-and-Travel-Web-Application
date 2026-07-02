@@ -1,4 +1,4 @@
-# ✈️ Trippy — AI-Powered Travel Booking Platform
+#  Trippy — AI-Powered Travel Booking Platform
 
 > A full-stack travel booking platform with a conversational AI trip planner, JWT authentication, and cloud-native AWS infrastructure.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
