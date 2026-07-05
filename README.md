@@ -235,7 +235,7 @@ trippy/
 
 ---
 
-## Contributing
+## Contributing 
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
@@ -254,4 +254,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-> ⭐ If you found this project useful, consider giving it a star!
+> ⭐ If you found this project useful, consider giving it a star!pls
