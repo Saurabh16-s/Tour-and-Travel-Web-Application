@@ -9,7 +9,7 @@ app = FastAPI(title="Trippy AI Agent", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://13.127.212.231",        
+        "http://13.126.227.115",        
         "http://localhost:5173",         
         "http://localhost:3000",         
     ],
