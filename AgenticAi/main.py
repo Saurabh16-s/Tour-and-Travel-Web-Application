@@ -30,7 +30,7 @@ class ChatResponse(BaseModel):
 
 @app.get("/")
 def root():
-    return {"status": "Trippy AI Agent is running 🚀"}
+    return {"status": "Trippy AI Agent is running "}
 
 
 @app.post("/chat", response_model=ChatResponse)
