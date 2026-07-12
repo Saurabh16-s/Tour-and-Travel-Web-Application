@@ -7,6 +7,7 @@ import Service from "./routes/Service";
 import About from "./routes/About"; 
 import Home from "./routes/Home";
 import ChatWidget from "./components/ChatWidget";
+// im so tired i need internship
 
 
 export default function App() {
