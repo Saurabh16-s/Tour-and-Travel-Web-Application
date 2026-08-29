@@ -2,7 +2,6 @@
 
 > A full-stack travel booking platform with a conversational AI trip planner, JWT authentication, and cloud-native AWS infrastructure.
 
-🌐 **Live Demo:** [http://13.126.227.115/](http://13.126.227.115/)
 
 ---
 
@@ -254,4 +253,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-> ⭐ If you found this project useful, consider giving it a star!pls
+> If you found this project useful, consider giving it a star!pls
